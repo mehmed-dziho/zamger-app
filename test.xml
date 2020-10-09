@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Zamger RSS</title>
+        <link>https://zamger.etf.unsa.ba</link>
+        <description>Aktuelne informacije za studenta Mehmed DÅ¾iho</description>
+        <language>bs-ba</language>
+        <atom:link href="https://zamger.etf.unsa.ba/rss.php?id=ANzTmgVSkT" rel="self" type="application/rss+xml" />
+        <pubDate>Tue, 29 Sep 2020 13:59:19 +0200</pubDate>
+        <item>
+            <guid isPermaLink="false">k5032</guid>
+            <title>ÄŒestitamo! Dobili ste 6 -- predmet Algoritmi i strukture podataka</title>
+            <link>https://zamger.etf.unsa.ba/index.php?sta=student/predmet&amp;predmet=42&amp;ag=15</link>
+            <description></description>
+            <pubDate>Tue, 29 Sep 2020 13:59:19 +0200</pubDate>
+        </item>
+        <item>
+            <guid isPermaLink="false">i22000</guid>
+            <title>Objavljeni termini za ispit Usmeni (29. 09. 2020) - predmet Diskretna matematika</title>
+            <link>https://zamger.etf.unsa.ba/index.php?sta=student/predmet&amp;predmet=4&amp;ag=15</link>
+            <description><![CDATA[Datum objave 28. 09. 2020  07:50.]]></description>
+            <pubDate>Thu, 1 Jan 1970 01:00:00 +0100</pubDate>
+        </item>
+        <item>
+            <guid isPermaLink="false">i21984</guid>
+            <title>Objavljeni termini za ispit Uvid u radove (28. 09. 2020) - predmet Diskretna matematika</title>
+            <link>https://zamger.etf.unsa.ba/index.php?sta=student/predmet&amp;predmet=4&amp;ag=15</link>
+            <description><![CDATA[Datum objave 26. 09. 2020  03:37.]]></description>
+            <pubDate>Thu, 1 Jan 1970 01:00:00 +0100</pubDate>
+        </item>
+    </channel>
+</rss>
