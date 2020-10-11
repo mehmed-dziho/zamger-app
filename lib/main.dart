@@ -8,7 +8,8 @@ void main() {
   runApp(GetMaterialApp(
       title: 'Zamger',
       theme: ThemeData(
-        primaryColor: PRIMARY_COLOR,
+        primaryColor: PRIMARY_BACKGROUND,
+        scaffoldBackgroundColor: PRIMARY_BACKGROUND,
       ),
       initialRoute: '/home',
       onInit: () {

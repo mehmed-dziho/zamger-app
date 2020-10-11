@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'dart:io';
 
 import 'package:dio/dio.dart';
@@ -7,13 +8,14 @@ import 'package:zamger/services/dio.dart';
 import 'package:xml/xml.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:zamger/store/news_controller.dart';
+import 'package:zamger/utils/utils.dart';
 
 Future<List<NewsPost>> fetchAllNews(rssLink) async {
-  // String rawXml = await fetchRssFeed(rssLink);
+  String rawXml = await fetchRssFeed(rssLink);
 
-  String contents = await rootBundle.loadString('test.xml');
+  // String rawXml = await rootBundle.loadString('test.xml');
 
-  final xml = XmlDocument.parse(contents);
+  final xml = XmlDocument.parse(rawXml);
 
   String newsHeader = xml.findAllElements('description').first.innerText;
   String lastUpdated = xml.findAllElements('pubDate').first.innerText;
@@ -42,8 +44,8 @@ Future<List<NewsPost>> fetchAllNews(rssLink) async {
 
     posts.add(NewsPost(
       title: title,
-      link: link,
       description: description,
+      link: link,
     ));
   });
 
@@ -53,9 +55,6 @@ Future<List<NewsPost>> fetchAllNews(rssLink) async {
 Future<String> fetchRssFeed(String rssLink) async {
   try {
     Response<String> response = await dio.get(rssLink);
-
-    print(response);
-
     return response.data;
   } catch (error, stacktrace) {
     print(error);

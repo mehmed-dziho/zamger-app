@@ -16,6 +16,7 @@ class AsyncButton extends FlatButton {
   @override
   Widget build(BuildContext context) {
     return OutlineButton(
+      borderSide: BorderSide(color: WHITE_BORDER, width: 1),
       onPressed: () {
         if (!async) {
           onPressed();
